@@ -3,10 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site com Docker</title>
+    <title>Docker</title>
 </head>
 <body>
-    <h1>Meu Site com Docker!</h1>
-    <p>Esse é o meu site usando Docker</p>
+    <p>
+        > 1. `docker run hello-world` isso vai confirmar se o Docker tá configurado corretamente e exibir uma mensagem simples.
+        2. Verificando Containers em Execução:
+            - Usar o comando `docker ps` pra listar os containers em execução, mostrando detalhes como ID, nome e portas.
+        3. Parando e Removendo um Container:
+            - Pra ver o id do container que vc quer parar, roda o domando `docker ps`
+            - Se precisar parar e remover um container, use os comandos `docker stop <ID_do_Container>` e `docker rm <ID_do_Container>`**. Substitua `<ID_do_Container>`pelo ID do container que quer parar e remover.
+        4. Explorando o Contêiner:
+            - Pra entrar em um contêiner em execução, usar o comando `docker exec -it <ID_do_Container> /bin/bash`. Isso vai uma espécie de cmd dentro do container.
+        5. Principais Comandos Docker:
+            - `docker ps`: Lista containers (em execução).
+            - `docker ps -a`: Lista todos os containers (incluindo os parados).
+            - `docker pull`: Baixa uma imagem do Docker Hub (a playstore dos dockers).
+            - `docker images`: Lista imagens disponíveis no sistema.
+            - `docker stop`: Para um container em execução.
+            - `docker rm`: Remove um ou mais containers
+            - `docker rmi`: Remove uma ou mais imagens.
+            - `docker exec`: Executa um comando dentro de um container em execução. </p>
+</body>
+    </p>
 </body>
 </html>
